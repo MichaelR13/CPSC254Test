@@ -1,0 +1,14 @@
+// Simple program that keeps multiplying a number by 2 until it reaches 2048, while printing 
+// each step to the console.
+
+#include <iostream>
+
+int main() {
+    std::cout << "This program will print out the numbers 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, and 2048.\n" << std::endl;
+    int number = 1;
+    while (number < 2048) {
+        std::cout << number << std::endl;
+        number *= 2;
+    }
+    std::cout << number << std::endl;
+}
