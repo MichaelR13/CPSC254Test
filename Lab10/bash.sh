@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo "Root directory..."
-ls
-echo "Class files directory..."
+printf "Root directory...\n\n"
+ls -F
+printf "\n\n\nClass files directory...\n\n"
 cd tankrunner
-ls
+ls -F
+printf "\n\n\nScript complete"
