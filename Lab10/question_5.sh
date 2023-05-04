@@ -11,6 +11,7 @@ print_menu() {
     echo "  [2] File Integrity Check Helper"
     echo "  [3] Dependency Check Helper"
     echo "  [4] Credits"
+    echo "  [5] How to run the game"
     echo "==================================="
     echo ""
 }
@@ -74,6 +75,15 @@ while [ $option -ne 0 ]; do
             echo ""
             echo "THIS PROJECT WAS CREATED BY:"
             echo "  - Mario Linares and Michael Rojas"
+            ;;
+        5)
+            echo "How to run the game:"
+            echo ""
+            echo "1. python3 -m venv venv (create virtual environment)"
+            echo "2. source venv/bin/activate (activate virtual environment)"
+            echo "3. pip install -r requirements.txt (install dependencies)"
+            echo "4. python3 main.py (run game)"
+            echo "5. deactivate (deactivate virtual environment once done)"
             ;;
         *)
             echo "Invalid option. Please enter a valid option."
